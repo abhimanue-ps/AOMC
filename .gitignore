@@ -2,3 +2,50 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+*.env
+
+# Virtual environment folder (if you create one)
+venv/
+.venv/
+
+# IDE settings (VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Node modules (if frontend uses any npm libraries in future)
+node_modules/
+
+# Cache and temp files
+*.bak
+*.swp
+*.tmp
+*.~*
+
+# Python packaging
+*.egg-info/
+build/
+dist/
+
+# Reports and backup files (optional - if you make backups locally)
+backup/
+*.bak
+
+# Optional - Ignore frontend build outputs (if you build it later)
+frontend/build/
+frontend/dist/

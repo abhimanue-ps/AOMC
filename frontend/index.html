@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AOMC - Advanced Offline Mathematical Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Welcome to AOMC</h1>
+    <div class="container">
+        <h1>AOMC - Advanced Offline Mathematical Calculator</h1>
+
+        <button id="theme-toggle">🌙 Dark Mode</button>
+
+        <h2>Math Calculator</h2>
+        <form id="calc-form">
+            <input type="text" id="expression" placeholder="Enter expression (e.g., factorial(5), sin(30))">
+            <button type="submit">Calculate</button>
+        </form>
+        <p id="result"></p>
+
+        <h2>Equation Solver</h2>
+        <form id="solve-form">
+            <input type="text" id="equation" placeholder="Enter equation (e.g., 2*x + 3 = 7)">
+            <button type="submit">Solve</button>
+        </form>
+        <p id="solve-result"></p>
+
+        <h2>Graph Plotter</h2>
+        <form id="plot-form">
+            <input type="text" id="plot-function" placeholder="Enter function (e.g., sin(x), x**2 - 2*x + 1)">
+            <button type="submit">Plot Graph</button>
+        </form>
+        <p id="plot-result"></p>
+        
+        <!-- ✅ Graph will be displayed here -->
+        <img id="plot-image" style="display:none; max-width: 100%;" alt="Graph will appear here">
+        
+
+        <h2>Calculation History</h2>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
